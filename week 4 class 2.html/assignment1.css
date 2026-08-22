@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+.card {
+    width: 700px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    gap: 12px;
+}
+
+.images img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    font-size: 16px;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 15px;
+}
