@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: chartreuse;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1fr;          /* Mobile: 1 column */
+    gap: 10px;
+}
+
+.photos img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    body {
+        font-size: 20px;
+        color: red;
+    }
+
+    .photos {
+        grid-template-columns: 1fr 1fr;  /* 2 columns */
+    }
+}
+
+/* Desktop - same as the laptop screenshot */
+@media (min-width: 1024px) {
+    body {
+        font-size: 28px;
+        color: blue;
+    }
+
+    .photos {
+        grid-template-columns: repeat(4, 1fr);  /* 4 images in a row */
+    }
+}
